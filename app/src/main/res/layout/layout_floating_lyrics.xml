@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/floating_root"
+    android:layout_width="260dp"
+    android:layout_height="wrap_content"
+    android:background="#D9000000"
+    android:orientation="vertical"
+    android:padding="12dp"
+    android:elevation="8dp">
+
+    <!-- Top Bar Controls -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="end"
+        android:layout_marginBottom="4dp">
+
+        <ImageView
+            android:id="@+id/iv_bg_toggle"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginEnd="12dp"
+            android:padding="4dp"
+            android:src="@android:drawable/ic_menu_manage"
+            app:tint="#FFFFFF" />
+
+        <ImageView
+            android:id="@+id/iv_close_button"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:padding="4dp"
+            android:src="@android:drawable/ic_menu_close_clear_cancel"
+            app:tint="#FFFFFF" />
+    </LinearLayout>
+
+    <!-- Text Fields -->
+    <TextView
+        android:id="@+id/tv_track_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Waiting for music..."
+        android:textColor="#00FF66"
+        android:textStyle="bold"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/tv_lyrics"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:text="Lyrics will appear here..."
+        android:textColor="#FFFFFF"
+        android:textSize="13sp" />
+
+    <!-- Bottom Media Controls -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="8dp"
+        android:gravity="end|bottom">
+
+        <ImageView
+            android:id="@+id/iv_prev"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_marginEnd="8dp"
+            android:padding="4dp"
+            android:src="@android:drawable/ic_media_previous"
+            app:tint="#FFFFFF" />
+
+        <ImageView
+            android:id="@+id/iv_play_pause"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_marginEnd="8dp"
+            android:padding="4dp"
+            android:src="@android:drawable/ic_media_play"
+            app:tint="#FFFFFF" />
+
+        <ImageView
+            android:id="@+id/iv_next"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_marginEnd="12dp"
+            android:padding="4dp"
+            android:src="@android:drawable/ic_media_next"
+            app:tint="#FFFFFF" />
+
+        <ImageView
+            android:id="@+id/iv_resize_handle"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:padding="4dp"
+            android:src="@android:drawable/ic_menu_sort_by_size"
+            app:tint="#88FFFFFF" />
+    </LinearLayout>
+</LinearLayout>
